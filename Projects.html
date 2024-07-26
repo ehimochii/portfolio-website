@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Generic - Phantom by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            margin: 20px; /* Space between the wrapper and the edges of the page */
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+            gap: 20px;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .project .inner {
+            flex: 1;
+        }
+
+        .project img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project .text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 780px) {
+            .project {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project img {
+                margin-left: 0;
+                margin-top: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutme.html">About Me</a></li>
+                <li><a href="Motiondesign.html">Motion Design</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <!--<li><a href="elements.html">Elements</a></li>-->
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <h1>Projects</h1>
+                <span class="image main"><img src="images/Coding at the Science Lab.jpg" alt="" /></span>
+                <p>Throughout my time in college, I have completed numerous projects that have tested my coding abilities and enhanced my understanding of abstract concepts. I have worked on three major projects in Python and five major projects in C++. Although I am unable to share the code due to my school's policy, I will describe each project's significance and provide a brief overview. Additionally, I will include images of the project outputs to give you a visual insight into my work.</p>
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Mancala</h1>
+                    <h2>Fall 2024, Python</h2>
+                    <p>This project implements a simplified version of the Mancala game. It includes functions to draw the game board, initialize and update player moves, and manage the gameplay loop until one player's row of cups is empty. The main functions handle the visual representation of the board, player input validation, and stone distribution across the cups and mancalas. The game concludes by determining and announcing the winner based on the number of stones in each player's mancala.</p>
+                </div>
+                <img src="images/mancala.png" alt="Mancala Game Image" />
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Tactego</h1>
+                    <h2>Fall 2024, Python</h2>
+                    <p>This project implements a simplified strategy game called Tactego, where players control pieces on a grid-based board. It sets up the board by reading piece types and quantities from a file, placing them randomly for two teams (Red and Blue). The game includes logic for moving pieces, handling battles based on piece types, and checking for game-winning conditions. It features validation functions to ensure players make legal moves and provides specific error messages for invalid actions. The game runs in a loop, alternating turns between players until one team captures all flags and wins.</p>
+                </div>
+                <img src="images/tactego.png" alt="Tactego Game Image" />
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Phone Network</h1>
+                    <h2>Fall 2024, Python</h2>
+                    <p>This project simulates a telecommunications network by managing phone calls and area codes, allowing connections between switchboards and phones. It includes functions for connecting switchboards, adding new switchboards and phones, and starting or ending calls, while respecting a maximum call limit per area code. Users can save the network state to a JSON file and load it back, facilitating persistent network configurations. The code also finds paths between area codes to establish calls and tracks connections to ensure limits are not exceeded. It features a command-line interface for interacting with the network, displaying its current state, and handling user inputs.</p>
+                </div>
+                <img src="images/phone network.png" alt="Phone Network Image" />
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Wheel of Fortune</h1>
+                    <h2>Spring 2024, C++</h2>
+                    <p>This project implements a simplified version of the "Wheel of Fortune" game in C++. It includes functions for game operations such as loading puzzle data, displaying the puzzle with guessed letters, and tracking user guesses. The game runs in a loop where it asks the user to guess letters until the puzzle word is fully revealed or the game ends. Key functionalities include maintaining an ASCII table for letter frequency, checking if the game is over, and updating the puzzle display based on correct guesses. Data is loaded from a file containing categories and words used in the puzzles.</p>
+                </div>
+                <img src="images/wheel of fortune.png" alt="Wheel of Fortune Image" />
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Pokemon</h1>
+                    <h2>Spring 2024, C++</h2>
+                    <p>This project defines a Game class that manages a Pokémon-like game where users can interact with a Pokémon database and perform various actions. The Game constructor initializes the game with a file name, which is used to load Pokémon data from a file into an array. The LoadFile method reads Pokémon details from the file, populating a Pokédex array, while DisplayPokeDex shows all Pokémon in the database. The MainMenu function provides a user interface for various game actions such as displaying Pokémon, managing a team, catching new Pokémon, battling, and training. Additional methods handle the logic for catching Pokémon based on rarity, adding Pokémon to a team, training Pokémon, and battling with randomly generated enemies.</p>
+                </div>
+                <img src="images/pokemon.png" alt="Pokemon game Image" />
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Airport System</h1>
+                    <h2>Spring 2024, C++</h2>
+                    <p>This project defines the Navigator class for managing and interacting with a collection of airports and routes, with routes represented as linked lists. The Navigator constructor initializes the object with a filename, and the destructor cleans up allocated memory for airports and routes. The Start method begins the program by reading airport data from a file and displaying the main menu. The InsertNewRoute method allows users to create a new route (linked list) by selecting airports, while DisplayRoute, RemoveAirportFromRoute, and ReverseRoute provide functionality to view, modify, and reverse these routes. Additional methods like RouteDistance calculate the total distance of a route by traversing the linked list, and ChooseRoute assists in selecting a route from the available options.</p>
+                </div>
+                <img src="images/airport.png" alt="Airport System Image" />
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Space Game</h1>
+                    <h2>Spring 2024, C++</h2>
+                    <p>This code defines the Game class for a space exploration game involving items and planets, utilizing polymorphism for handling different types of items and planets. The game initializes with file names for items and planets, and uses polymorphism to load and manage different item types (Armor, Engine, Weapon) and planet types (Enemy, Gas, Mining). The StartGame method begins the game, loading data, creating a ship, and entering the main game loop. Players can interact with the game through methods like Move, AttackPlanet, and TravelUtopia, where polymorphism allows for varying behaviors based on the specific item or planet type. The game utilizes polymorphic behavior to handle different item and planet interactions, providing a flexible and extensible gameplay experience.</p>
+                </div>
+                <img src="images/space game.png" alt="Space game Image" />
+            </div>
+
+            <div class="project">
+                <div class="inner text">
+                    <h1>Movie Player</h1>
+                    <h2>Spring 2024, C++</h2>
+                    <p>This project showcases a movie catalog management system using C++ with a focus on templates and object-oriented programming. The MoviePlayer class handles movie data by loading it from a file into a dynamic catalog, using std::vector to manage and store Movie objects. It features a user-friendly interface with options to display movies by year and genre, add movies to a playlist, and sort or search the playlist based on various criteria. Key concepts utilized include class destructors for memory management, file I/O for data handling, and templates for flexible and reusable code structures. This implementation emphasizes robust data management and interactive functionality, reflecting both advanced C++ techniques and practical application in software design.</p>
+                </div>
+                <img src="images/movie player.png" alt="Movie Player Image" />
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <section>
+                    <h2>MY SOCIALS</h2>
+                    <ul class="icons">
+                        <li><a href="https://github.com/ehimochii" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/ehizele-obinyan-47a577303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="icon solid style2 fa-link"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="mailto:ehobingo@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                </section>
+                <ul class="copyright">
+                    <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
